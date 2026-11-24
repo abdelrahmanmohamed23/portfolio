@@ -22,6 +22,10 @@ import StoreProvider from "../components/StoreProvider";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import Footer from "@/components/Footer";
 import AutoScrollProvider from "@/contexts/AutoScrollContext";
+export const viewport = {
+  colorScheme: "dark",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html
