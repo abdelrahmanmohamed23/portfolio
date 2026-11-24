@@ -1,0 +1,21 @@
+
+
+[
+  {
+    "id": 1,
+    "slug": "modern-ecommerce-platform",
+    "title": "Modern E-Commerce Platform",
+    "description": "A full-stack e-commerce application featuring dynamic product filtering, shopping cart management, secure user authentication, and an admin dashboard for inventory control.",
+    "imgUrl": "/logo.png",
+    "imgAlt": "Modern E-Commerce Platform storefront and product management preview",
+    "technologies": [
+      "Next.js",
+      "Tailwind CSS",
+      "Prisma",
+      "PostgreSQL",
+      "NextAuth.js"
+    ],
+    "liveUrl": "https://your-ecommerce-demo.vercel.app",
+    "githubUrl": "https://github.com/yourusername/ecommerce-platform"
+  }
+]

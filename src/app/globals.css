@@ -5,11 +5,98 @@
   --foreground: #171717;
 }
 
+@layer utilities {
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes border-spin {
+    25% {
+      border-top-color: var(--color-primary);
+      border-right-color: black;
+      border-bottom-color: black;
+      border-left-color: black;
+    }
+    50% {
+      border-left-color: var(--color-primary);
+      border-top-color: black;
+      border-bottom-color: black;
+      border-right-color: black;
+    }
+    75% {
+      border-bottom-color: var(--color-primary);
+      border-top-color: black;
+      border-left-color: black;
+      border-right-color: black;
+    }
+    100% {
+      border-right-color: var(--color-primary);
+      border-top-color: black;
+      border-left-color: black;
+      border-bottom-color: black;
+    }
+    /* 12.5% {
+      border-top-color: var(--color-primary);
+    }
+    25% {
+      border-top-color: black;
+    }
+    35.5% {
+      border-left-color: var(--color-primary);
+    }
+    50% {
+      border-left-color: black;
+    }
+
+    62.5% {
+      border-bottom-color: var(--color-primary);
+    }
+    75% {
+      border-bottom-color: black;
+    }
+    87.5% {
+      border-right-color: var(--color-primary);
+    }
+    100% {
+      border-right-color: black;
+    } */
+  }
+  .animate-border-spin {
+    animation: 3s linear infinite forwards;
+  }
+  .spinner {
+    animation: spin 2s linear infinite;
+  }
+}
+
+
+
 @theme inline {
-  --color-background: var(--background);
+  /* --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-geist-mono); */
+
+  /* --color-primary: #9041d9; */
+  --color-primary: #00d2ff;
+  --color-background: #05060c;
+  --color-text: #ffffff;
+  --color-nav-active-indicator: #9c21f9;
+  /* --gradient-button-primary: linear-gradient(90deg,#3B00FF 0%,#6F3DFF 55%,#8B5CF6 100%); */
+  --gradient-button-primary: linear-gradient(
+    90deg,
+    #0055ff 0%,
+    #0099ff 55%,
+    #00d2ff 100%
+  );
+
+  --color-text-secondary: #c9cbd5;
+  --color-status-available: #00ff66;
 }
 
 @media (prefers-color-scheme: dark) {
